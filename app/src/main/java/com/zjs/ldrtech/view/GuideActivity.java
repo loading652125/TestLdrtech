@@ -11,7 +11,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.target.Target;
 import com.zjs.ldrtech.MainActivity;
 import com.zjs.ldrtech.R;
 import com.zjs.ldrtech.utils.SharePrefereceTool;
@@ -47,10 +50,11 @@ public class GuideActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mImageViewList = new ArrayList<ImageView>();
+        mImageViewList = new ArrayList<>();
         for(int i = 0; i < gImage.length; i++){
             ImageView image = new ImageView(this);
-            image.setBackgroundResource(gImage[i]);
+            Glide.with(this).load(gImage[i]).into(image);
+            image.setScaleType(ImageView.ScaleType.FIT_XY);
             mImageViewList.add(image);
         }
     }

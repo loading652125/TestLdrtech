@@ -8,19 +8,24 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.ScaleAnimation;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.bumptech.glide.Glide;
 import com.zjs.ldrtech.MainActivity;
 import com.zjs.ldrtech.R;
 import com.zjs.ldrtech.utils.SharePrefereceTool;
 
 public class SplashActivity extends AppCompatActivity {
     private RelativeLayout relativeLayout;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        Glide.with(this).load(R.drawable.splash1).into(imageView);
         relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
         startAmin();
     }
