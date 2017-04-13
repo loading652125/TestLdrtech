@@ -34,11 +34,11 @@ public class SplashActivity extends AppCompatActivity {
         AnimationSet animSet = new AnimationSet(false);
         ScaleAnimation scale = new ScaleAnimation(0, 1, 0, 1,
                 Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        scale.setDuration(500);
+        scale.setDuration(1500);
         scale.setFillAfter(true);
 
         AlphaAnimation alpha = new AlphaAnimation(0,1);
-        alpha.setDuration(500);
+        alpha.setDuration(1500);
         alpha.setFillAfter(true);
         animSet.addAnimation(scale);
         animSet.addAnimation(alpha);

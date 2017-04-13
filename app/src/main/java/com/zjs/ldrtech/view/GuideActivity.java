@@ -26,7 +26,7 @@ public class GuideActivity extends AppCompatActivity {
     private Button btnStart;
     private int mPointWidth;
     ArrayList<ImageView> mImageViewList;
-    private static final int[] gImage = new int[]{R.drawable.splash2,R.drawable.splash3};
+    private static final int[] gImage = new int[]{R.drawable.splash2,R.drawable.splash3,R.drawable.splash4};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
