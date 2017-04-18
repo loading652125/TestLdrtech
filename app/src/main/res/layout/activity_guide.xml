@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guild"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.zjs.ldrtech.view.GuideActivity">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/guide_viewpager"
+        android:id="@+id/viewpage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </android.support.v4.view.ViewPager>
+        android:layout_height="match_parent"/>
 
     <Button
-        android:id="@+id/btn_start"
+        android:id="@+id/bt_skip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/white"
+        android:text="@string/skip"
+        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"/>
+    <Button
+        android:id="@+id/bt_start_now"
+        android:textColor="@android:color/white"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
         android:text="@string/startnow"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
         android:visibility="invisible"/>
 
     <RelativeLayout
@@ -25,12 +40,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="16dp"
+        android:id="@+id/relativeLayout2">
 
         <LinearLayout
-            android:id="@+id/ll_point_grounp"
+            android:id="@+id/ll_point_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal"
+            />
+        <ImageView
+            android:id="@+id/iv_white_point"
+            android:background="@drawable/selected_radius"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            />
     </RelativeLayout>
 </RelativeLayout>
