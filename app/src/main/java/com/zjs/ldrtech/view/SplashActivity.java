@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
                 boolean userGuide = SharePrefereceTool.getPrefBoolean(SplashActivity.this,"guide_showed",
                         false);
                 if (!userGuide){
-                    startActivity(new Intent(SplashActivity.this,GuideActivity.class));
+                    startActivity(new Intent(SplashActivity.this,MaterialGuideActivity.class));
                 } else{
                     startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 }
@@ -84,7 +84,8 @@ public class SplashActivity extends AppCompatActivity {
         boolean userGuide = SharePrefereceTool.getPrefBoolean(SplashActivity.this,"guide_showed",
                 false);
         if (!userGuide){
-            startActivity(new Intent(SplashActivity.this,GuideActivity.class));
+//            startActivity(new Intent(SplashActivity.this,GuideActivity.class));
+            startActivity(new Intent(SplashActivity.this,MaterialGuideActivity.class));
         } else{
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
         }

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -28,6 +29,8 @@
         <activity
             android:name=".view.GuideActivity"
             android:theme="@style/Theme.FullScreen" />
+        <activity android:name=".view.MaterialGuideActivity"
+            android:theme="@style/Theme.FullScreen"></activity>
     </application>
 
 </manifest>
