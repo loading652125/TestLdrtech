@@ -9,51 +9,51 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <Button
         android:id="@+id/bt_skip"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:textColor="@android:color/white"
-        android:text="@string/skip"
-        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/skip"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
     <Button
         android:id="@+id/bt_start_now"
-        android:textColor="@android:color/white"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="32dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/startnow"
-        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
         android:background="@android:color/transparent"
-        android:visibility="invisible"/>
+        android:text="@string/startnow"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="invisible" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:id="@+id/relativeLayout2">
+        android:layout_marginBottom="16dp">
 
         <LinearLayout
             android:id="@+id/ll_point_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            />
+            android:orientation="horizontal" />
+
         <ImageView
             android:id="@+id/iv_white_point"
-            android:background="@drawable/selected_radius"
             android:layout_width="10dp"
             android:layout_height="10dp"
-            />
+            android:background="@drawable/selected_radius" />
     </RelativeLayout>
 </RelativeLayout>
